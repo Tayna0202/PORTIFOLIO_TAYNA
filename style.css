@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Font1';
-    src: url("/Inlanders\ Demo.otf");
+    src: url("Inlanders\ Demo.otf");
 }
 
 @font-face {
     font-family: 'Font2';
-    src: url("/Square.ttf");
+    src: url("Square.ttf");
 }
 
 *{
