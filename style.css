@@ -335,6 +335,7 @@ section .obs{
     border-radius: 20px;
     padding: 45px 30px;
     cursor: pointer;
+    max-width: 25em;
 }
 
 /* Projetos */
@@ -634,12 +635,6 @@ input{
     p{
         font-size: 1.3em;
     }
-}
-
-@media (max-width: 400px){
-    .links i{
-        font-size: 30px;
-    }
     .content{
         display: none;
     }
@@ -647,22 +642,30 @@ input{
         display: block;
     }
     .slidemobile img{
-        width: 400px;
+        width: 650px;
         border-radius: 20px;
     }
     .slidemobile h1{
         margin-top: 50px;
-        font-size: 10vw;
+        font-size: 7vw;
     }
-    #contatos h1, p{
-        padding-top: 10px;
-        font-size: 25px;
+}
+
+@media (max-width: 400px){
+    .links i{
+        font-size: 30px;
     }
     .wrapper::before{
         height: 250px;
         width: 250px;
         left: -12%;
         top: 75%;
+    }
+    .slidemobile img{
+        width: 400px;
+    }
+    .slidemobile h1{
+        font-size: 10vw;
     }
 }
 
