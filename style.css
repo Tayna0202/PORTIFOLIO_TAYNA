@@ -335,7 +335,6 @@ section .obs{
     border-radius: 20px;
     padding: 45px 30px;
     cursor: pointer;
-    width: 25em;
 }
 
 /* Projetos */
@@ -507,6 +506,10 @@ input{
     color: #fff;
 }
 
+.slidemobile{
+    display: none;
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar{
@@ -527,7 +530,7 @@ input{
         top: 6em;
         width: 85%;
         border-radius: 50px;
-        height: 73%;
+        height: 70%;
         background: #00d5ffba;
         flex-direction: column;
         align-items: center;
@@ -579,26 +582,19 @@ input{
         width: 192%;
     }
     .wrapper::before{
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
+        height: 250px;
+        width: 250px;
         left: -12%;
-        top: 55%;
+        top: 60%;
     }
     .wrapper::after{
-        margin-top: 0px;
-        height: 200px;
-        width: 200px;
-        left: 90%;
-        top: 45%;
-    }
-    @keyframes object1{
-        50%{
-            left: 80%;
-        }
+        display: none;
     }
     h1{
         font-size: 2em;
+    }
+    p{
+        font-size: 1.5em;
     }
     .imgbox{
         width: 50%;
@@ -631,51 +627,42 @@ input{
     }
 }
 
-@media (max-width: 800px){
-    .content{
-        height: 50%;
-        width: 90%;
+@media (max-width: 700px){
+    .links i{
+        font-size: 35px;
     }
-    .slides img{
-        width: 90vw;
-        height: 60vw;
+    p{
+        font-size: 1.3em;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 400px){
+    .links i{
+        font-size: 30px;
+    }
     .content{
-        margin-top: 150px;
-        height: 26%;
-        width: 90%;
-        position: absolute;
+        display: none;
     }
-    .bar{
-        width: 50px;
-    }
-    .slides img{
-        width: 28em;
-    }
-    #projetos .tag{
-        font-size: 20px;
-    }
-    .overlay{
-        opacity: 0.5;
-        font-size: 0px;
-    }
-    #proj{
-        margin-bottom: -240px;
-    }
-    h1{
-        font-size: 1.5em;
-    }
-    #click{
+    .slidemobile{
         display: block;
-        font-size: 2.5em;
-        margin-top: 100px;
-        margin-bottom: -100px;
     }
-    #tag{
-        display: block;
+    .slidemobile img{
+        width: 400px;
+        border-radius: 20px;
+    }
+    .slidemobile h1{
+        margin-top: 50px;
+        font-size: 10vw;
+    }
+    #contatos h1, p{
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .wrapper::before{
+        height: 250px;
+        width: 250px;
+        left: -12%;
+        top: 75%;
     }
 }
 
