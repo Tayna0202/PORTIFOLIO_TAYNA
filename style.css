@@ -181,6 +181,10 @@ b{
     z-index: 5;
 }
 
+.cols1{
+    width: 35em;
+}
+
 .topline{
     display: block;
     position: relative;
@@ -251,32 +255,19 @@ button:hover{
     height: 100%;
 }
 
-.imgbox img{
+.imgbox .perfil{
     position: relative;
     height: 100%;
     width: 100%;
     top: 70px;
-    animation: animateUser 5s linear infinite;
 }
 
-.imgbox #splash{
+.imgbox .fundo{
     position: absolute;
+    width: 150%;
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animateUser{
-    40%{
-        top: 45px;
-    }
-}
-
-@keyframes animate{
-    40%{
-        top: 450px;
-    }
 }
 
 /* Sobre & Certificados e diplomas */
@@ -379,10 +370,6 @@ input{
     display: flex;
     width: 500%;
 }
-
-/* .slides img{
-    width: 100em;
-} */
 
 .slides img{
     width: 80vw;
@@ -583,10 +570,7 @@ input{
         width: 192%;
     }
     .wrapper::before{
-        height: 250px;
-        width: 250px;
-        left: -12%;
-        top: 60%;
+        display: none;
     }
     .wrapper::after{
         display: none;
@@ -596,20 +580,6 @@ input{
     }
     p{
         font-size: 1.5em;
-    }
-    .imgbox{
-        width: 50%;
-        height: 50%;
-    }
-    .imgbox img{
-        top: 100px;
-        width: 80vw;
-        left: 10%;
-        animation: none;
-        position: static;
-    }
-    .imgbox #splash{
-        display: none;
     }
     .sobre p{
         margin-bottom: 0px;
@@ -625,6 +595,13 @@ input{
     .slides img{
         width: 80vw;
         height: 80vw;
+    }
+    .imgbox{
+        width: 80vw;
+        height: 80vw;
+    }
+    .imgbox .fundo{
+        width: 120%;
     }
 }
 
@@ -656,16 +633,17 @@ input{
         font-size: 30px;
     }
     .wrapper::before{
-        height: 250px;
-        width: 250px;
-        left: -12%;
-        top: 75%;
+        display: none;
     }
     .slidemobile img{
         width: 400px;
     }
     .slidemobile h1{
         font-size: 10vw;
+    }
+    .imgbox .fundo{
+        width: 120%;
+        top: 140px;
     }
 }
 
