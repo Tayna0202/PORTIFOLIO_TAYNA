@@ -56,7 +56,7 @@ nav{
     background: linear-gradient(90deg, #00f7ff 0%, rgb(231, 74, 255) 56%, rgb(255, 255, 255) 100%);
     background-size: 400% 100%;
     display: flex;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 3px;
     cursor: pointer;
@@ -531,12 +531,6 @@ input{
         transform: translateY(-120%);
         transition: transform 0.3s ease-in;
     }
-    #blocosbreve{
-        display: flex;
-    }
-    #breve{
-        display: none;
-    }
     body{
         overflow-x: hidden;
     }
@@ -640,7 +634,7 @@ input{
         display: none;
     }
     .slidemobile img{
-        width: 400px;
+        width: 350px;
     }
     .slidemobile h1{
         font-size: 10vw;
@@ -648,6 +642,12 @@ input{
     .imgbox .fundo{
         width: 120%;
         top: 140px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .container-contatos h1{
+        font-size: 25px;
     }
 }
 
