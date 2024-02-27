@@ -5,5 +5,5 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50px"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="50px"/>
 <div>
-  <img src="/capa.jpeg" border-radius="20px">
+  <img src="img/capa.jpg" border-radius="20px">
 </div>
